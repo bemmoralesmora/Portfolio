@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Delius", cursive;
+}
+
+:root {
+  --black: #000;
+  --violet: #9929ea;
+  --violet-light: rgb(204, 102, 218);
+  --beige: rgb(250, 242, 194);
+  --white: white;
+  --red: rgb(255, 0, 0);
+  --yellow: rgb(255, 255, 0);
+  --green: rgb(0, 255, 0);
+
+  --mega-title: 3.5rem;
+  --title: 2rem;
+  --subtitle: 1.5rem;
+  --text: 1rem;
+  --text-tiny: 0.75rem;
+  --text-tiny-tiny: 0.5rem;
+}
