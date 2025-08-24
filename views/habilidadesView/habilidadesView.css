@@ -1,7 +1,7 @@
 .habilidades_container {
   width: 100%;
   height: auto;
-  background-color: rgb(77, 77, 187);
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,83 @@
   height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   padding: 2rem;
+}
+
+.habilidades_container_modules .tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.habilidades_container_modules .tool:hover {
+  transform: translateY(-5px) scale(1.05);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+
+.habilidades_container_modules .tool img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .habilidades_container {
+    padding: 1.5rem;
+    gap: 0.8rem;
+  }
+
+  .linea_morada_habilidad {
+    width: 5rem;
+    margin-top: -0.5rem;
+  }
+
+  .habilidades_container_modules {
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .habilidades_container_modules .tool {
+    padding: 0.8rem;
+  }
+
+  .habilidades_container_modules .tool img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* Móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .habilidades_container {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .linea_morada_habilidad {
+    width: 4rem;
+    margin-top: -0.3rem;
+  }
+
+  .habilidades_container_modules {
+    grid-template-columns: 1fr; /* 1 columna */
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .habilidades_container_modules .tool {
+    padding: 0.5rem;
+  }
+
+  .habilidades_container_modules .tool img {
+    width: 2rem;
+    height: 2rem;
+  }
 }

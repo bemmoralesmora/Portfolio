@@ -18,6 +18,9 @@ html {
   --red: rgb(255, 0, 0);
   --yellow: rgb(255, 255, 0);
   --green: rgb(0, 255, 0);
+  --pastel: rgb(166, 178, 139);
+  --peach: rgb(245, 201, 176);
+  --shadow: rgb(28, 53, 45);
 
   --mega-title: 3.5rem;
   --title: 2rem;

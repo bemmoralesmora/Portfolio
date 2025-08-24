@@ -64,9 +64,127 @@
   gap: 0.8rem;
 }
 
+/* Hover botones */
+.mi_trabajo_btn:hover {
+  background-color: var(--violet-light);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.sobre_mi_btn:hover {
+  background-color: var(--violet);
+  color: var(--white);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Redes sociales */
 .container_redes a {
   width: 3rem;
-  height: 100%;
-  border: 1px solid var(--black);
+  height: 3rem;
   border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: transform 0.3s ease;
+  background-color: var(--pastel);
+}
+
+.container_redes a:hover {
+  transform: scale(1.1);
+}
+
+.container_redes img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .home {
+    height: auto;
+    gap: 0.8rem;
+    padding: 2rem 1rem;
+  }
+
+  .presentacion {
+    font-size: 3rem; /* Ajusta según variable --mega-title */
+    text-align: center;
+  }
+
+  .descripcion {
+    width: 28rem;
+    font-size: 1.2rem; /* Ajusta según --subtitle */
+  }
+
+  .botones_home {
+    width: 14rem;
+    gap: 0.8rem;
+  }
+
+  .mi_trabajo_btn {
+    width: 8rem;
+  }
+
+  .sobre_mi_btn {
+    width: 6rem;
+  }
+
+  .container_redes {
+    width: 14rem;
+    height: 2.5rem;
+    gap: 0.6rem;
+  }
+
+  .container_redes a img {
+    width: 55%;
+    height: 55%;
+  }
+}
+
+/* Móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .home {
+    height: auto;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .presentacion {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .descripcion {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .botones_home {
+    flex-direction: column;
+    width: 12rem;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .mi_trabajo_btn,
+  .sobre_mi_btn {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .container_redes {
+    width: 12rem;
+    height: 2.5rem;
+    gap: 0.5rem;
+  }
+
+  .container_redes a img {
+    width: 50%;
+    height: 50%;
+  }
 }

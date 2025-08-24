@@ -1,6 +1,7 @@
 export function about_me() {
   let about_me = document.createElement("div");
   about_me.className = "about_me";
+  about_me.id = "about";
 
   let titulo = document.createElement("h1");
   titulo.className = "titulo_about";
@@ -11,10 +12,39 @@ export function about_me() {
   linea_morada.className = "linea_morada";
   about_me.appendChild(linea_morada);
 
+  // Carrusel
   let carrusel_imagenes = document.createElement("div");
   carrusel_imagenes.className = "carrusel";
   about_me.appendChild(carrusel_imagenes);
 
+  let imagenes = [
+    "./assets/gentebuena.webp", // 👉 tus imágenes
+    "../assets/gentebuena2.jpeg",
+    "../assets/amigos.jpeg",
+    "../assets/feria.jpg",
+  ];
+
+  let img = document.createElement("img");
+  img.src = imagenes[0];
+  img.className = "carrusel_img";
+  carrusel_imagenes.appendChild(img);
+
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % imagenes.length;
+
+    // añadir animación fade-out
+    img.classList.remove("fade-in");
+    img.classList.add("fade-out");
+
+    setTimeout(() => {
+      img.src = imagenes[index];
+      img.classList.remove("fade-out");
+      img.classList.add("fade-in");
+    }, 500); // tiempo del fade-out antes de cambiar
+  }, 5000);
+
+  // Info
   let infomacion_me = document.createElement("div");
   infomacion_me.className = "informacion_me";
   about_me.appendChild(infomacion_me);
@@ -26,21 +56,36 @@ export function about_me() {
 
   let texto1 = document.createElement("p");
   texto1.textContent =
-    "I'm a passionate full-stack developer with expertise in modern web technologies. I specialize in creating responsive, accessible, and performant web applications that deliver exceptional user experiences.";
+    "Soy un desarrollador full-stack apasionado, con experiencia en tecnologías web modernas. Me enfoco en crear aplicaciones web responsivas, accesibles y de alto rendimiento que brinden experiencias excepcionales a los usuarios.";
   infomacion_me.appendChild(texto1);
 
   let texto2 = document.createElement("p");
   texto2.textContent =
-    "With a background in both front-end and back-end development, I bring a holistic approach to solving complex problems and building scalable solutions.";
+    "Gracias a mi experiencia tanto en front-end como en back-end, aplico un enfoque integral para resolver problemas complejos y construir soluciones escalables.";
   infomacion_me.appendChild(texto2);
 
   let stats = document.createElement("div");
   stats.className = "stats";
-  infomacion_me.appendChild(stats);
 
-  let descarga_cv = document.createElement("button");
+  // Imagen de estadísticas principales
+  let statsImage = document.createElement("img");
+  statsImage.src =
+    "https://github-readme-stats.vercel.app/api?username=bemmoralesmora&show_icons=true&theme=tokyonight";
+  statsImage.alt = "GitHub Stats";
+  statsImage.style.width = "100%";
+  statsImage.style.maxWidth = "500px";
+  statsImage.style.borderRadius = "10px";
+
+  stats.appendChild(statsImage);
+
+  infomacion_me.appendChild(stats);
+  // Botón CV
+  let descarga_cv = document.createElement("a");
   descarga_cv.className = "cv";
-  descarga_cv.textContent = "Descarga mi CV";
+  descarga_cv.textContent = "Descargar CV";
+  descarga_cv.href = "./assets/cv.pdf"; // 👉 tu archivo CV
+  descarga_cv.download = "Brian_Morales_CV.pdf"; // nombre al descargar
   infomacion_me.appendChild(descarga_cv);
+
   return about_me;
 }

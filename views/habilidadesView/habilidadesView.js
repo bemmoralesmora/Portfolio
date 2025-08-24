@@ -5,6 +5,7 @@ import { habilidad } from "../../modules/habilidades/habilidades.js";
 export function habilidadesView() {
   let habilidadesView = document.createElement("div");
   habilidadesView.className = "habilidades_container";
+  habilidadesView.id = "skills";
 
   let titulo = document.createElement("h1");
   titulo.className = "titulo_skill";
@@ -26,34 +27,43 @@ export function habilidadesView() {
       herramientas: [
         {
           nombre: "HTML",
-          img: "https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png?f=webp",
+          img: "./assets/HTML5.png",
         },
-        { nombre: "CSS", img: "img/css.png" },
-        { nombre: "JavaScript", img: "img/js.png" },
-        { nombre: "React", img: "img/react.png" },
+        { nombre: "CSS", img: "./assets/CSS3.png" },
+        {
+          nombre: "JavaScript",
+          img: "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png",
+        },
+        { nombre: "React", img: "./assets/React.png" },
       ],
     },
     {
       nombre: "Backend",
       herramientas: [
-        { nombre: "Node.js", img: "img/node.png" },
-        { nombre: "Express", img: "img/express.png" },
-        { nombre: "Python", img: "img/python.png" },
+        { nombre: "Node.js", img: "./assets/Node.js.png" },
+        { nombre: "Express", img: "./assets/Express.png" },
+        {
+          nombre: "Python",
+          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
+        },
       ],
     },
     {
       nombre: "Base de Datos",
       herramientas: [
-        { nombre: "MySQL", img: "img/mysql.png" },
-        { nombre: "MongoDB", img: "img/mongo.png" },
+        {
+          nombre: "MySQL",
+          img: "https://cdn-icons-png.flaticon.com/512/5968/5968313.png",
+        },
+        { nombre: "MongoDB", img: "./assets/MongoDB.png" },
       ],
     },
     {
       nombre: "Herramientas",
       herramientas: [
-        { nombre: "Git", img: "img/git.png" },
-        { nombre: "GitHub", img: "img/github.png" },
-        { nombre: "VS Code", img: "img/vscode.png" },
+        { nombre: "Git", img: "./assets/Git.png" },
+        { nombre: "GitHub", img: "./assets/GitHub.png" },
+        { nombre: "VS Code", img: "./assets/Visual.png" },
       ],
     },
   ];

@@ -1,0 +1,146 @@
+.proyecto {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pastel);
+}
+
+.imagen_proyecto {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.imagen_proyecto img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: cover;
+}
+
+.nombre_proyecto {
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+.descripcion_proyecto {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.botones_proyecto {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.btn_ver_proyecto,
+.btn_codigo_fuente {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--naranja);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn_ver_proyecto:hover,
+.btn_codigo_fuente:hover {
+  background-color: var(--violet);
+}
+
+.btn_ver_proyecto img,
+.btn_codigo_fuente img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .proyecto {
+    width: 20rem;
+    height: auto; /* altura flexible */
+  }
+
+  .nombre_proyecto {
+    font-size: 1.3rem;
+  }
+
+  .descripcion_proyecto {
+    font-size: 0.95rem;
+  }
+
+  .btn_ver_proyecto,
+  .btn_codigo_fuente {
+    font-size: 0.95rem;
+    height: 2.8rem;
+  }
+
+  .btn_ver_proyecto img,
+  .btn_codigo_fuente img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+/* Móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .proyecto {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .imagen_proyecto {
+    height: 40%; /* un poco menos de la mitad para dar espacio al contenido */
+  }
+
+  .nombre_proyecto {
+    font-size: 1.2rem;
+  }
+
+  .descripcion_proyecto {
+    font-size: 0.9rem;
+  }
+
+  .botones_proyecto {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn_ver_proyecto,
+  .btn_codigo_fuente {
+    width: 100%;
+    font-size: 0.9rem;
+    height: 2.5rem;
+  }
+
+  .btn_ver_proyecto img,
+  .btn_codigo_fuente img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
