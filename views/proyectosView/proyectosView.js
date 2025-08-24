@@ -11,7 +11,7 @@ export function proyectosView() {
   proyectosView.appendChild(titulo);
 
   let linea_morada = document.createElement("div");
-  linea_morada.className = "linea_morada_habilidad";
+  linea_morada.className = "proyectos_linea_morada";
   proyectosView.appendChild(linea_morada);
 
   let proyectos_container = document.createElement("div");
