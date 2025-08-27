@@ -20,8 +20,7 @@ export function about_me() {
   let imagenes = [
     "./assets/gentebuena.webp", // 👉 tus imágenes
     "../assets/gentebuena2.jpeg",
-    "../assets/amigos.jpeg",
-    "../assets/feria.jpg",
+    "../assets/amigos_forever.jpeg",
   ];
 
   let img = document.createElement("img");
