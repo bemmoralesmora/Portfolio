@@ -50,18 +50,23 @@ export function about_me() {
 
   let quien_soy = document.createElement("h2");
   quien_soy.className = "quien_soy";
-  quien_soy.textContent = "¿Quien soy?";
+  quien_soy.textContent = "¿Quién soy?";
   infomacion_me.appendChild(quien_soy);
 
   let texto1 = document.createElement("p");
   texto1.textContent =
-    "Soy un desarrollador full-stack apasionado, con experiencia en tecnologías web modernas. Me enfoco en crear aplicaciones web responsivas, accesibles y de alto rendimiento que brinden experiencias excepcionales a los usuarios.";
+    "Apasionado por la tecnología y la electrónica, motivado por la curiosidad y el deseo de crear soluciones innovadoras que aporten a un mundo mejor.";
   infomacion_me.appendChild(texto1);
 
   let texto2 = document.createElement("p");
   texto2.textContent =
-    "Gracias a mi experiencia tanto en front-end como en back-end, aplico un enfoque integral para resolver problemas complejos y construir soluciones escalables.";
+    "Constancia, creatividad y determinación han guiado mi camino desde pequeño, enfrentando desafíos y persiguiendo metas ambiciosas, convencido de que con esfuerzo y conocimiento es posible lograr grandes cosas.";
   infomacion_me.appendChild(texto2);
+
+  let texto3 = document.createElement("p");
+  texto3.textContent =
+    "Esta pasión me impulsa a aprovechar cada oportunidad de aprendizaje, con la meta de marcar una diferencia positiva y demostrar que los sueños se pueden alcanzar, sin importar los obstáculos.";
+  infomacion_me.appendChild(texto3);
 
   let stats = document.createElement("div");
   stats.className = "stats";

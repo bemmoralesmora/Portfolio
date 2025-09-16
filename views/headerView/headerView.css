@@ -15,8 +15,8 @@
 }
 
 .header.scrolled {
-  opacity: 0.8; /* 👈 baja la opacidad solo al hacer scroll */
-  backdrop-filter: blur(6px); /* opcional: efecto vidrio */
+  opacity: 0.8;
+  backdrop-filter: blur(6px);
 }
 
 .name-portfolio {

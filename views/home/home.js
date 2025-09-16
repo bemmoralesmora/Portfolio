@@ -8,11 +8,11 @@ export function home() {
   presentacion.textContent = "Hola, soy Brian Morales";
   home.appendChild(presentacion);
 
-  let descipcion = document.createElement("p");
-  descipcion.className = "descripcion";
-  descipcion.textContent =
-    "Soy un desarrollador full-stack apasionado, dedicado a crear experiencias web hermosas y funcionales.";
-  home.appendChild(descipcion);
+  let descripcion = document.createElement("p");
+  descripcion.className = "descripcion";
+  descripcion.textContent =
+    "Full-stack y amante de la tecnología, con proyectos de robótica y energía que combinan creatividad, constancia e innovación.";
+  home.appendChild(descripcion);
 
   // BOTONES
   let botones_home = document.createElement("div");
@@ -52,7 +52,7 @@ export function home() {
 
   // GitHub
   let gitHub = document.createElement("a");
-  gitHub.href = "https://github.com/";
+  gitHub.href = "https://github.com/bemmoralesmora";
   gitHub.target = "_blank";
   container_redes.appendChild(gitHub);
 
@@ -63,7 +63,7 @@ export function home() {
 
   // LinkedIn
   let linkendin = document.createElement("a");
-  linkendin.href = "https://linkedin.com/";
+  linkendin.href = "http://linkedin.com/in/brian-morales-312554337/";
   linkendin.target = "_blank";
   container_redes.appendChild(linkendin);
 
@@ -74,7 +74,7 @@ export function home() {
 
   // Email
   let email = document.createElement("a");
-  email.href = "mailto:example@gmail.com";
+  email.href = "mailto:moramorales4477@gmail.com";
   container_redes.appendChild(email);
 
   let email_logo = document.createElement("img");
@@ -84,7 +84,7 @@ export function home() {
 
   // WhatsApp
   let whatsapp = document.createElement("a");
-  whatsapp.href = "https://wa.me/50200000000"; // tu número
+  whatsapp.href = "https://wa.me/50238345017"; // tu número
   whatsapp.target = "_blank";
   container_redes.appendChild(whatsapp);
 

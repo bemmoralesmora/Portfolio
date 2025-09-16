@@ -151,6 +151,7 @@
     height: auto;
     gap: 0.5rem;
     padding: 1.5rem 1rem;
+    padding-top: 15rem; /* altura total del header en móvil (ajusta según tu diseño) */
   }
 
   .presentacion {
